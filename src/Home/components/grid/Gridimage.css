@@ -1,0 +1,77 @@
+.gridimage{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.grid-image-container{
+    width: 100%;
+    max-width: 1024px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'delhi delhi delhi Banglore Banglore Banglore'
+    'Mumbai Mumbai chennai chennai jaipur jaipur';
+    height: 100%;
+}
+.grid-image-container >.item{
+    position: relative;
+    height: 300px;
+    border-radius: 15px;
+}
+.grid-image-container> .item > span{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+
+}
+.bottom-1{
+    grid-area: Mumbai
+}
+.bottom-2{
+    grid-area: chennai
+}
+.bottom-3{
+    grid-area: jaipur;
+}
+.top-1{
+    grid-area: delhi;
+}
+.top-2{
+    grid-area: Banglore;
+}
+.grid-image-container >.item >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    @media (max-width: 600px) {
+        .gridimage{
+            height: max-content;
+        }
+        .grid-image-container{
+            grid-template-areas: 
+            'delhi delhi delhi delhi delhi delhi'
+            'Mumbai Mumbai Mumbai Mumbai  jaipur jaipur'
+            'chennai chennai chennai chennai Banglore Banglore'
+            
+        }
+        @media (max-width: 600px) {
+            .gridimage{
+                height: max-content;
+            }
+            .grid-image-container{
+                grid-template-areas: 
+                'delhi delhi delhi delhi delhi delhi'
+                'Mumbai Mumbai Mumbai Mumbai Mumbai Mumbai  '
+                'jaipur jaipur jaipur jaipur jaipur jaipur'
+                'chennai chennai chennai chennai chennai chennai '
+                'Banglore Banglore Banglore Banglore Banglore Banglore'
+                
+            }}
+        }

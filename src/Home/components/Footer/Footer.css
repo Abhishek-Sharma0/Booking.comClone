@@ -1,0 +1,37 @@
+.footer-section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    height: max-content;
+    padding: 30px 20px;
+    color: black;
+    
+}
+.footer-container{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    color: #003580;
+}
+@media (max-width:700px) {
+    #third{
+        display: none;
+    }
+    #fourth{
+        display: none;
+    }
+    
+}

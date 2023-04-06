@@ -1,0 +1,139 @@
+.individalitemlist{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    align-items: center;
+    border-radius: 15px;
+    height: max-content;
+    gap: 10px;
+    
+
+}
+.imagediv{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img-ind{
+    width: 100%;
+    height: 100%;
+}
+.bold{
+    font-weight: 700;
+    font-size: 15px;
+}
+.bottom-content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 3;
+}
+.leftcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    flex: 1.6;
+    align-items: flex-start;
+    margin-left: 10px;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.7;
+    height: 100%;
+}
+ .green-dark{
+    font-weight: 800;
+    color: darkgreen;
+}
+.btn-span{
+    background-color: darkgreen;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 5px;
+}
+.head-left{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    width: 100%;
+}
+.btn-lg{
+    width: 100%;
+    background-color: #003580;
+    padding: 8px 10px;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.green{
+    color: darkgreen;
+}
+.blue{
+    color: #003580;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 800;
+    color: #003580;
+}
+.smtext{
+    font-size: 12px;
+
+}
+.rightcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+@media (max-width:650px) {
+    .individalitemlist {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+        padding: 10px;
+    }
+    .imagediv {
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+    }
+    .img-ind {
+        width: 100%;
+        height: 70%;
+    }
+    .leftcontent{
+        align-items: flex-start;
+    }
+    .right-content{
+        align-self: flex-end;
+    }
+    .bottom-content{
+        flex: 1;
+        width: 100%;
+    
+    }
+}

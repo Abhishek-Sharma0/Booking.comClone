@@ -1,0 +1,70 @@
+.Header{
+    width: 100%;
+    background-color: #003580;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.Headercontainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0 100px 0;
+    padding: 15px;
+}
+.marginless{
+    margin: 20px 0 20px 0 !important;
+}
+.iconbuttons{
+   display: flex;
+   gap: 40px;
+   margin-top: 15px;
+   padding: 5px 15px;
+}
+.singleiconbutton{
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    
+}
+.dkjKVr{
+    background-color: white !important;
+    color: black !important;
+
+}
+.rec-carousel-item{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.cqQwrw{
+    box-shadow: 0 0 1px 3px white !important;
+    background-color: white;
+}
+.active{
+    border: 2px solid white;
+    border-radius: 200px;
+
+}
+.HEADER-CONTENT{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.HEADER-CONTENT button{
+    align-self: flex-start;
+    padding: 8px 12px;
+    color: white;
+    background-color: rgb(3, 151, 250);
+    border: none;
+}
+@media (max-width:700px) {
+
+    .Headercontainer{
+        margin:  20px auto;
+    }
+    
+}
