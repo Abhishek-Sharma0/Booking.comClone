@@ -37,7 +37,7 @@ const SingleHotel = () => {
           </div>
           <FontAwesomeIcon icon={faCircleArrowRight} className="right-slide" onClick={()=>changeslideno("r")} />
           </div>}
-        <div className='single-main-container'>
+        {!openslider && <div className='single-main-container'>
           <div className='adress'>
             <span className='ll-text'>Tower Street Apartment</span>
             <div className='icondiv'>
@@ -65,7 +65,7 @@ const SingleHotel = () => {
               <button className='single-btl'>Reserve or book now</button>
             </div>
           </div>
-        </div>
+        </div>}
       </div>
       <Email />
       <Footer />

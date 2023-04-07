@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-   height: 2000px; 
+   height: 900px; 
 
 }
 .single-main-container{
@@ -149,6 +149,12 @@
     font-size: 30px;
     color: lightgray;
 }
+@media (max-width: 900px) {
+    .slider-img{
+        height: 65vh;
+    }
+    
+}
 @media (max-width: 700px) {
     .single-btn{
         position: static;
@@ -158,5 +164,10 @@
         grid-template-rows: repeat(3,1fr);
         gap: 5px;
     }
-    
+    .singl-main{
+        height: 1200px;
+    }
+    .slider-img{
+        height: 58vh;
+    }
 }

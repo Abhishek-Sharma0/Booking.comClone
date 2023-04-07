@@ -6,6 +6,8 @@ import { useState } from 'react';
 import { createContext } from 'react';
 export const mycontext = createContext();
 function App() {
+
+  // we have taken this code from npm date range picker on giving this rangedate to dateranger and onchange we update this and use
   const [rangedate, setrangedate] = useState([
     {
       startDate: new Date(),

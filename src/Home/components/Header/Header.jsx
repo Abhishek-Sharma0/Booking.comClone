@@ -1,15 +1,15 @@
 import React from 'react'
 import "./Header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBed, faPlane, faTaxi, faCar } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faPlane, faTaxi, faCar, faTrain, faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import Searchbar from './Searchbar';
 import Carousel from "react-elastic-carousel";
 const breakPoints = [
     { width: 1, itemsToShow: 2 },
     { width: 400, itemsToShow: 3 },
     { width: 550, itemsToShow: 4 },
-    { width: 768, itemsToShow: 8 },
-    { width: 1200, itemsToShow: 10 },
+    { width: 768, itemsToShow: 6 },
+    // { width: 1200, itemsToShow: 8 },
   ];
 const Header = ({type}) => {
     return (
@@ -36,6 +36,14 @@ const Header = ({type}) => {
                     <div className='singleiconbutton'>
                         <FontAwesomeIcon icon={faTaxi} />
                         <span>Airport taxi</span>
+                    </div>
+                    <div className='singleiconbutton'>
+                        <FontAwesomeIcon icon={faTrain} />
+                        <span>Metro station</span>
+                    </div>
+                    <div className='singleiconbutton'>
+                        <FontAwesomeIcon icon={faBagShopping} />
+                        <span>shopping</span>
                     </div>
                     </Carousel>
                 </div>

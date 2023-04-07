@@ -32,6 +32,9 @@ const Searchbar = () => {
                     <FontAwesomeIcon icon={faCalendar} />
                     <span onClick={()=>{setopendate(opendate=> !opendate)}}>{`${format(rangedate[0].startDate,'MM-dd-yyyy')} to 
                     ${format(rangedate[0].endDate,'MM-dd-yyyy')}`}</span>
+
+                    {/* //here we are using npm package date range picker */}
+
                    {opendate&&<DateRange className='daterangeset'
   editableDateInputs={true}
   onChange={item => setrangedate([item.selection])}
@@ -75,7 +78,12 @@ const Searchbar = () => {
                     </div>}
                     
                 </div>
-                <Link to={"/List"}><button className='submit'>Submit</button></Link>
+                <Link to={"/List"}><button className='submit' onClick={(e)=>{
+                    if(destination===""){
+                        e.preventDefault();
+                    alert("enter the destination feild");
+                    return;
+                }}}>Submit</button></Link>
                 
             </div>
 
