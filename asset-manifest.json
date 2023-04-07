@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Booking.com-clone/static/css/main.36f7f183.css",
+    "main.js": "/Booking.com-clone/static/js/main.e39e1c24.js",
+    "index.html": "/Booking.com-clone/index.html",
+    "main.36f7f183.css.map": "/Booking.com-clone/static/css/main.36f7f183.css.map",
+    "main.e39e1c24.js.map": "/Booking.com-clone/static/js/main.e39e1c24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36f7f183.css",
+    "static/js/main.e39e1c24.js"
+  ]
+}
