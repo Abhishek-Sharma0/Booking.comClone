@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import "./Searchbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBed } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faClose } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { faPerson,faSquarePlus,faSquareMinus } from '@fortawesome/free-solid-svg-icons'
 import 'react-date-range/dist/styles.css'; // main style file
@@ -29,7 +29,7 @@ const Searchbar = () => {
                     <input type="text" placeholder='Where are you going' id='searchinput' onChange={(e)=>{setdestination(e.target.value)}} value={destination} />
                 </div>
                 <div className='searchplace'>
-                    <FontAwesomeIcon icon={faCalendar} />
+                    <FontAwesomeIcon icon={faClose} />
                     <span onClick={()=>{setopendate(opendate=> !opendate)}}>{`${format(rangedate[0].startDate,'MM-dd-yyyy')} to 
                     ${format(rangedate[0].endDate,'MM-dd-yyyy')}`}</span>
 
