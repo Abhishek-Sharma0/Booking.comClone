@@ -29,7 +29,7 @@ const Searchbar = () => {
                     <input type="text" placeholder='Where are you going' id='searchinput' onChange={(e)=>{setdestination(e.target.value)}} value={destination} />
                 </div>
                 <div className='searchplace'>
-                    <FontAwesomeIcon icon={faClose} />
+                    <FontAwesomeIcon icon={faCalendar} className="calenderclose" />
                     <span onClick={()=>{setopendate(opendate=> !opendate)}}>{`${format(rangedate[0].startDate,'MM-dd-yyyy')} to 
                     ${format(rangedate[0].endDate,'MM-dd-yyyy')}`}</span>
 
